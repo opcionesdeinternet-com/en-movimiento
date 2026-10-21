@@ -4,62 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>En Movimiento - Guía práctica de ejercicios en silla de ruedas</title>
+    <meta name="description" content="Guía visual y práctica con rutinas y ejercicios adaptados en silla de ruedas: seguridad, fuerza, movilidad, core y resistencia para empezar hoy.">
     <!-- Tailwind CSS CDN para un diseño moderno y responsivo -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] .chev { transform: rotate(180deg); }
+        .chev { transition: transform .2s ease; }
+        a:focus-visible, summary:focus-visible { outline: 2px solid #2dd4bf; outline-offset: 3px; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            * { transition: none !important; }
+        }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 antialiased">
+<body class="bg-slate-900 text-slate-100 antialiased pb-24 md:pb-0">
 
     <!-- HERO SECTION -->
     <header class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-teal-950/40 to-slate-900 py-12 lg:py-20">
         <div class="max-w-6xl mx-auto px-4">
-            
+
             <div class="text-center max-w-3xl mx-auto mb-10">
                 <span class="inline-block bg-teal-500/10 text-teal-400 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-teal-500/20">
                     Ebook Digital • En Movimiento
                 </span>
                 <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                    Movete con más seguridad, fuerza y confianza desde tu propia silla
+                    Movete con más seguridad, fuerza y confianza desde tu propia silla de ruedas
                 </h1>
                 <p class="text-lg sm:text-xl text-slate-300 leading-relaxed">
-                    Una guía práctica y accesible diseñada para acompañar rutinas de movimiento adaptadas a distintas posibilidades y niveles.
+                    Una guía práctica, visual y paso a paso para construir una rutina adaptada: movilidad, fuerza, core, flexibilidad y resistencia, con adaptaciones según tu capacidad.
                 </p>
             </div>
 
-            <!-- CONTENEDOR PORTADA + OFERTA -->
+            <!-- CONTENEDOR PORTADA + CTA -->
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center max-w-4xl mx-auto bg-slate-800/60 border border-slate-700/80 rounded-3xl p-6 sm:p-8 backdrop-blur shadow-2xl">
-                
-                <!-- Imagen Portada -->
-                <div class="md:col-span-5 flex justify-center">
-                    <img src="Portada.jpg" alt="Portada En Movimiento" class="rounded-2xl shadow-2xl border border-slate-700/50 max-w-[280px] w-full h-auto object-cover transform hover:scale-105 transition-transform duration-300">
+
+                <!-- Mockup del ebook -->
+                <div class="md:col-span-6 flex justify-center">
+                    <img src="Mockup-ebook.jpg" alt="Mockup del ebook En Movimiento: Guía práctica de ejercicios en silla de ruedas" width="1024" height="1024" class="rounded-2xl shadow-2xl border border-slate-700/50 w-full max-w-[420px] h-auto object-cover">
                 </div>
 
-                <!-- Detalle de Oferta / CTA -->
-                <div class="md:col-span-7 text-center md:text-left space-y-4">
-                    <div class="inline-flex items-center gap-2 bg-amber-500/10 text-amber-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-amber-500/20">
-                        ⚡ PRECIO PROMOCIONAL DE LANZAMIENTO
+                <!-- Detalle / CTA -->
+                <div class="md:col-span-6 text-center md:text-left space-y-4">
+                    <div class="inline-flex items-center gap-2 bg-teal-500/10 text-teal-300 text-xs font-bold px-3 py-1.5 rounded-lg border border-teal-500/20">
+                        ⚡ ACCESO INMEDIATO
                     </div>
                     <h2 class="text-2xl font-bold text-white">
-                        Acceso Inmediato e Ilimitado
+                        Ebook + 2 bonos GRATIS
                     </h2>
-                    <p class="text-sm text-slate-300">
+                    <p class="text-sm sm:text-base text-slate-300">
                         Formato PDF 100% digital compatible con tu celular, tablet o computadora. Descargalo hoy mismo y empezá a entrenar a tu ritmo.
                     </p>
-                    
+
+                    <ul class="text-sm text-slate-300 space-y-1.5 text-left inline-block">
+                        <li>✅ Guía completa en PDF</li>
+                        <li>🎁 Bono #1: Tabla resumen de ejercicios</li>
+                        <li>🎁 Bono #2: Checklist antes de cada sesión</li>
+                    </ul>
+
                     <div class="pt-2">
-                        <a href="https://pay.hotmart.com/M108002293R?off=qs69sixw" class="block w-full bg-teal-600 hover:bg-teal-500 text-white font-extrabold py-4 px-6 rounded-2xl text-lg text-center transition-all shadow-lg hover:shadow-teal-500/25">
-                            Ver Precio Promocional en tu Moneda Local →
+                        <a href="https://pay.hotmart.com/M108002293R?checkoutMode=10" class="block w-full bg-teal-600 hover:bg-teal-500 text-white font-extrabold py-4 px-6 rounded-2xl text-lg text-center transition-all shadow-lg hover:shadow-teal-500/25">
+                            Quiero empezar hoy →
                         </a>
+                        <p class="text-xs text-slate-400 mt-2">El precio se muestra en tu moneda local al ingresar al checkout.</p>
                     </div>
-                    
-                    <div class="flex items-center justify-center md:justify-start gap-4 text-xs text-slate-400 pt-1">
-                        <span>🔒 Pago Seguro</span>
-                        <span>•</span>
-                        <span>🌍 Disponible Internacionalmente</span>
-                        <span>•</span>
+
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-1 text-xs text-slate-400 pt-1">
+                        <span>🔒 Pago seguro</span>
+                        <span>🌍 Disponible internacionalmente</span>
                         <span>🛡️ Garantía 7 días</span>
                     </div>
                 </div>
@@ -71,70 +87,291 @@
 
     <!-- BONOS GRATIS -->
     <section class="py-16 bg-slate-950/60 border-y border-slate-800/80">
-        <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10 text-white">🎁 Bonos GRATIS Incluidos con tu Compra</h2>
-            <div class="space-y-4">
-                <div class="bg-slate-800/50 border border-slate-700/50 p-5 rounded-2xl flex items-center justify-between gap-4">
-                    <div>
-                        <h3 class="font-bold text-white text-base sm:text-lg">#1. Tabla Resumen de Ejercicios</h3>
-                        <p class="text-sm text-slate-300">Una guía rápida visual para revisar la dosis, técnica y señales antes de entrenar.</p>
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-3 text-white">🎁 Bonos GRATIS incluidos con tu compra</h2>
+            <p class="text-center text-slate-300 mb-10">Además del ebook, te llevás estos regalos</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+
+                <!-- Bono 1 -->
+                <article class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col">
+                    <img src="Mockup-resumen.jpg" alt="Mockup del Bono #1: Tabla resumen de ejercicios" width="1024" height="1024" loading="lazy" class="w-full h-auto">
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center justify-between gap-3">
+                            <span class="text-teal-400 font-bold text-sm">Bono #1</span>
+                            <span class="text-teal-400 font-bold bg-teal-500/10 px-3 py-1 rounded-full text-xs border border-teal-500/20">INCLUIDO</span>
+                        </div>
+                        <h3 class="font-bold text-white text-xl">Tabla resumen de ejercicios</h3>
+                        <p class="text-sm sm:text-base text-slate-300">
+                            Una hoja imprimible para tener a mano el “qué, para qué y cómo” de cada ejercicio: objetivos, postura inicial y señales de alerta para que revises rápido antes de entrenar.
+                        </p>
                     </div>
-                    <span class="shrink-0 text-teal-400 font-bold bg-teal-500/10 px-3 py-1 rounded-full text-xs border border-teal-500/20">INCLUIDO</span>
-                </div>
-                <div class="bg-slate-800/50 border border-slate-700/50 p-5 rounded-2xl flex items-center justify-between gap-4">
-                    <div>
-                        <h3 class="font-bold text-white text-base sm:text-lg">#2. Checklist de Seguridad Antes de Cada Sesión</h3>
-                        <p class="text-sm text-slate-300">Dos minutos para verificar apoyos, postura y entorno para entrenar sin riesgos.</p>
+                </article>
+
+                <!-- Bono 2 -->
+                <article class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col">
+                    <img src="Mockup-checklist.jpg" alt="Mockup del Bono #2: Checklist antes de cada sesión" width="1024" height="1024" loading="lazy" class="w-full h-auto">
+                    <div class="p-6 space-y-3">
+                        <div class="flex items-center justify-between gap-3">
+                            <span class="text-teal-400 font-bold text-sm">Bono #2</span>
+                            <span class="text-teal-400 font-bold bg-teal-500/10 px-3 py-1 rounded-full text-xs border border-teal-500/20">INCLUIDO</span>
+                        </div>
+                        <h3 class="font-bold text-white text-xl">Checklist antes de cada sesión</h3>
+                        <p class="text-sm sm:text-base text-slate-300">
+                            Revisá en 2 minutos los puntos clave de seguridad y preparación (apoyos, postura, entorno y señales personales) para que tu práctica sea más consistente y cuidadosa.
+                        </p>
                     </div>
-                    <span class="shrink-0 text-teal-400 font-bold bg-teal-500/10 px-3 py-1 rounded-full text-xs border border-teal-500/20">INCLUIDO</span>
-                </div>
+                </article>
+
             </div>
         </div>
     </section>
 
     <!-- QUÉ VAS A ENCONTRAR -->
     <section class="py-16 max-w-5xl mx-auto px-4">
-        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12 text-white">¿Qué vas a encontrar dentro de la guía?</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-3 text-white">¿Qué vas a encontrar dentro de la guía?</h2>
+        <p class="text-center text-slate-300 mb-12">Todo lo que necesitás en un solo lugar</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl">
                 <div class="text-teal-400 text-3xl mb-3">🛡️</div>
                 <h3 class="font-bold text-lg text-white mb-2">Seguridad primero</h3>
-                <p class="text-slate-300 text-sm">Criterios claros para revisar apoyos, postura, entorno y señales personales antes de empezar.</p>
+                <p class="text-slate-300 text-sm">Recomendaciones de seguridad, señales para detenerse y criterios de progreso realistas para revisar apoyos, postura, entorno y señales personales antes de empezar.</p>
             </div>
             <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl">
-                <div class="text-teal-400 text-3xl mb-3">📋</div>
-                <h3 class="font-bold text-lg text-white mb-2">Ejercicios adaptados</h3>
-                <p class="text-slate-300 text-sm">Movilidad articular, empuje, tracción y zona media explicados paso a paso con referencias claras.</p>
+                <div class="text-teal-400 text-3xl mb-3">🧩</div>
+                <h3 class="font-bold text-lg text-white mb-2">Ejercicios claros y adaptables</h3>
+                <p class="text-slate-300 text-sm">Cada actividad está explicada con pasos sencillos, errores comunes y alternativas seguras según el nivel funcional.</p>
+            </div>
+            <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl">
+                <div class="text-teal-400 text-3xl mb-3">📌</div>
+                <h3 class="font-bold text-lg text-white mb-2">Rutinas orientativas por nivel</h3>
+                <p class="text-slate-300 text-sm">Estructuras listas para armar tu práctica (inicial, intermedio y avanzado) con pausas, orden y sugerencias para progresar.</p>
+            </div>
+            <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl">
+                <div class="text-teal-400 text-3xl mb-3">✅</div>
+                <h3 class="font-bold text-lg text-white mb-2">Constancia sin complicarte</h3>
+                <p class="text-slate-300 text-sm">Incluye registro semanal y herramientas para organizarte, medir avances y ajustar objetivos sin frustrarte.</p>
             </div>
             <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl">
                 <div class="text-teal-400 text-3xl mb-3">💪</div>
                 <h3 class="font-bold text-lg text-white mb-2">Prevención de sobrecarga</h3>
-                <p class="text-slate-300 text-sm">Aprende a cuidar hombros, codos y muñecas evitando dolores o molestias articulares.</p>
+                <p class="text-slate-300 text-sm">Aprendé a cuidar hombros, codos y muñecas para evitar dolores o molestias articulares.</p>
             </div>
             <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl">
                 <div class="text-teal-400 text-3xl mb-3">📱</div>
-                <h3 class="font-bold text-lg text-white mb-2">Formato 100% Digital</h3>
-                <p class="text-slate-300 text-sm">Descarga inmediata en PDF para llevar contigo y consultar en cualquier momento.</p>
+                <h3 class="font-bold text-lg text-white mb-2">Formato 100% digital</h3>
+                <p class="text-slate-300 text-sm">Descarga inmediata en PDF para llevar con vos y consultar en cualquier momento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿TE SENTÍS IDENTIFICADO? -->
+    <section class="py-16 bg-slate-950/60 border-y border-slate-800/80">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-3 text-white">¿Te sentís identificado?</h2>
+            <p class="text-center text-slate-300 mb-12">Si alguno de estos problemas te suena familiar, este ebook es para vos</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl flex gap-4">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center font-bold">✕</span>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">No sabés por dónde empezar</h3>
+                        <p class="text-slate-300 text-sm">Sentís que hay mucha información suelta o poco adaptada a tu silla y a tu capacidad funcional.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl flex gap-4">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center font-bold">✕</span>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">Tenés miedo a lesionarte</h3>
+                        <p class="text-slate-300 text-sm">Te preocupa hacer movimientos que carguen demasiado los hombros o desestabilicen el tronco.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl flex gap-4">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center font-bold">✕</span>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">Te cuesta sostener el hábito</h3>
+                        <p class="text-slate-300 text-sm">Arrancás con entusiasmo, pero después se vuelve difícil mantener una rutina ordenada y medible.</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl flex gap-4">
+                    <span class="shrink-0 w-8 h-8 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center font-bold">✕</span>
+                    <div>
+                        <h3 class="font-bold text-white mb-1">No sabés cómo progresar</h3>
+                        <p class="text-slate-300 text-sm">A veces sentís que no hay un camino claro para aumentar la dificultad sin pasarte de rosca.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-teal-400 font-semibold mt-10">Si respondiste “sí” a alguna de estas... esta guía es para vos.</p>
+        </div>
+    </section>
+
+    <!-- TODO LO QUE INCLUYE -->
+    <section class="py-16 max-w-3xl mx-auto px-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center mb-3 text-white">Todo lo que incluye tu compra</h2>
+        <p class="text-center text-slate-300 mb-10">Acceso inmediato a todo esto por un único pago</p>
+
+        <div class="bg-slate-800/60 border border-slate-700/80 rounded-3xl p-6 sm:p-8 shadow-2xl">
+            <ul class="divide-y divide-slate-700/70">
+                <li class="flex items-center justify-between gap-4 py-4">
+                    <span class="font-semibold text-white">En Movimiento: Guía práctica de ejercicios en silla de ruedas</span>
+                    <span class="shrink-0 text-teal-400 font-bold bg-teal-500/10 px-3 py-1 rounded-full text-xs border border-teal-500/20">EBOOK</span>
+                </li>
+                <li class="flex items-center justify-between gap-4 py-4">
+                    <span class="font-semibold text-white">Bono #1: Tabla resumen de ejercicios</span>
+                    <span class="shrink-0 text-teal-400 font-bold bg-teal-500/10 px-3 py-1 rounded-full text-xs border border-teal-500/20">GRATIS</span>
+                </li>
+                <li class="flex items-center justify-between gap-4 py-4">
+                    <span class="font-semibold text-white">Bono #2: Checklist antes de cada sesión</span>
+                    <span class="shrink-0 text-teal-400 font-bold bg-teal-500/10 px-3 py-1 rounded-full text-xs border border-teal-500/20">GRATIS</span>
+                </li>
+                <li class="flex items-center justify-between gap-4 py-4">
+                    <span class="font-semibold text-white">Garantía de 7 días</span>
+                    <span class="shrink-0 text-teal-400 font-bold bg-teal-500/10 px-3 py-1 rounded-full text-xs border border-teal-500/20">INCLUIDA</span>
+                </li>
+            </ul>
+            <div class="pt-6">
+                <a href="https://pay.hotmart.com/M108002293R?checkoutMode=10" class="block w-full bg-teal-600 hover:bg-teal-500 text-white font-extrabold py-4 px-6 rounded-2xl text-lg text-center transition-all shadow-lg hover:shadow-teal-500/25">
+                    Comprar ahora y empezar esta semana
+                </a>
+                <p class="text-xs text-slate-400 text-center mt-3">Pago único · Acceso de por vida · Garantía de devolución de 7 días · Compra 100% segura</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO LO VAS A USAR -->
+    <section class="py-16 bg-slate-950/60 border-y border-slate-800/80">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-3 text-white">Cómo lo vas a usar</h2>
+            <p class="text-center text-slate-300 mb-12">En solo 3 pasos simples</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-full bg-teal-600 text-white font-extrabold flex items-center justify-center mb-4">1</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Descargás el PDF</h3>
+                    <p class="text-slate-300 text-sm">Comprás, descargás el ebook y lo guardás en tu teléfono o computadora para tenerlo siempre a mano.</p>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-full bg-teal-600 text-white font-extrabold flex items-center justify-center mb-4">2</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Elegís tu punto de partida</h3>
+                    <p class="text-slate-300 text-sm">Buscás tu nivel (según capacidad funcional) y armás tu rutina con el orden recomendado y las pausas.</p>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/60 p-6 rounded-2xl">
+                    <div class="w-10 h-10 rounded-full bg-teal-600 text-white font-extrabold flex items-center justify-center mb-4">3</div>
+                    <h3 class="font-bold text-lg text-white mb-2">Entrenás, registrás y ajustás</h3>
+                    <p class="text-slate-300 text-sm">Usás el registro semanal para ver cómo te sentís y adaptar objetivos con progresión gradual, sin apurarte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GARANTÍA -->
+    <section class="py-16 max-w-3xl mx-auto px-4 text-center">
+        <div class="bg-slate-800/50 border border-teal-500/20 rounded-3xl p-8 sm:p-10">
+            <div class="text-5xl mb-4">🛡️</div>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-4">Garantía de devolución</h2>
+            <p class="text-slate-300 leading-relaxed mb-4">
+                Si después de leer el ebook sentís que no cumple tus expectativas, tenés 7 días para pedir la devolución. Queremos que te lleves una guía que de verdad te sirva para moverte con más seguridad.
+            </p>
+            <span class="inline-block text-teal-400 font-bold bg-teal-500/10 px-4 py-1.5 rounded-full text-sm border border-teal-500/20">7 días de protección al comprador</span>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="py-16 bg-slate-950/60 border-y border-slate-800/80">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-2xl sm:text-3xl font-bold text-center mb-3 text-white">Preguntas frecuentes</h2>
+            <p class="text-center text-slate-300 mb-10">Resolvemos todas tus dudas</p>
+
+            <div class="space-y-3">
+                <details class="group bg-slate-800/50 border border-slate-700/60 rounded-2xl p-5">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-white">
+                        ¿Este libro reemplaza la indicación de un kinesiólogo o médico?
+                        <span class="chev shrink-0 text-teal-400">▾</span>
+                    </summary>
+                    <p class="text-slate-300 text-sm mt-3">No. El contenido es educativo y orientativo. Está diseñado para acompañar tu práctica, pero no reemplaza una evaluación individual ni indicaciones de profesionales de salud o de ejercicio adaptado.</p>
+                </details>
+                <details class="group bg-slate-800/50 border border-slate-700/60 rounded-2xl p-5">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-white">
+                        ¿Sirve si tengo poca fuerza o control postural limitado?
+                        <span class="chev shrink-0 text-teal-400">▾</span>
+                    </summary>
+                    <p class="text-slate-300 text-sm mt-3">Sí, porque el ebook incluye adaptaciones y criterios para elegir ejercicios según capacidad funcional. Igual, para situaciones particulares o condiciones complejas, es importante validar con un profesional.</p>
+                </details>
+                <details class="group bg-slate-800/50 border border-slate-700/60 rounded-2xl p-5">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-white">
+                        ¿Cómo sé qué nivel elegir: inicial, intermedio o avanzado?
+                        <span class="chev shrink-0 text-teal-400">▾</span>
+                    </summary>
+                    <p class="text-slate-300 text-sm mt-3">Los niveles se eligen por capacidad funcional, no por edad o “experiencia”. Tenés señales generales para progresar y también criterios para detenerte si algo no se siente seguro o te exige de más.</p>
+                </details>
+                <details class="group bg-slate-800/50 border border-slate-700/60 rounded-2xl p-5">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-white">
+                        ¿Los ejercicios van a doler o pueden empeorar lesiones?
+                        <span class="chev shrink-0 text-teal-400">▾</span>
+                    </summary>
+                    <p class="text-slate-300 text-sm mt-3">La guía propone trabajo seguro y con atención a errores frecuentes, pero cada cuerpo responde distinto. Si aparece dolor agudo, mareo, síntomas inusuales o empeoramiento, conviene detenerte y pedir orientación profesional.</p>
+                </details>
+                <details class="group bg-slate-800/50 border border-slate-700/60 rounded-2xl p-5">
+                    <summary class="flex items-center justify-between gap-4 font-semibold text-white">
+                        ¿Qué materiales necesito?
+                        <span class="chev shrink-0 text-teal-400">▾</span>
+                    </summary>
+                    <p class="text-slate-300 text-sm mt-3">En general se priorizan elementos simples. El libro incluye materiales básicos y alternativas para que adaptes según tu espacio y recursos. En cualquier caso, si tenés dudas por tu condición, consultá con un profesional.</p>
+                </details>
             </div>
         </div>
     </section>
 
     <!-- LLAMADO A LA ACCIÓN FINAL -->
-    <section class="py-16 bg-gradient-to-t from-slate-950 to-slate-900 text-center border-t border-slate-800/80">
+    <section class="py-16 bg-gradient-to-t from-slate-950 to-slate-900 text-center">
         <div class="max-w-2xl mx-auto px-4">
             <h2 class="text-3xl font-extrabold text-white mb-4">Dale un marco a tu movimiento</h2>
-            <p class="text-slate-300 mb-8">Aprovecha la oferta de lanzamiento y descarga la guía completa junto a sus bonos de regalo hoy mismo.</p>
-            <a href="https://pay.hotmart.com/M108002293R?off=qs69sixw" class="inline-block bg-teal-600 hover:bg-teal-500 text-white font-extrabold py-4 px-8 rounded-2xl text-lg transition-all shadow-lg hover:shadow-teal-500/25">
-                Comenzar Hoy - Obtener Acceso Inmediato
+            <p class="text-slate-300 mb-6">Descargá la guía completa junto a sus 2 bonos de regalo y armá tu rutina hoy mismo.</p>
+            <ul class="text-sm text-slate-300 space-y-1 mb-8">
+                <li>🎁 Bono #1: Tabla resumen de ejercicios — GRATIS</li>
+                <li>🎁 Bono #2: Checklist antes de cada sesión — GRATIS</li>
+            </ul>
+            <a href="https://pay.hotmart.com/M108002293R?checkoutMode=10" class="inline-block bg-teal-600 hover:bg-teal-500 text-white font-extrabold py-4 px-8 rounded-2xl text-lg transition-all shadow-lg hover:shadow-teal-500/25">
+                Comenzar hoy - Obtener acceso inmediato
             </a>
             <p class="text-xs text-slate-400 mt-4">Garantía de devolución de 7 días. Checkout oficial procesado por Hotmart.</p>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-8 border-t border-slate-800 text-center text-xs text-slate-500">
-        <p>© En Movimiento. Todos los derechos reservados.</p>
+    <footer class="py-8 border-t border-slate-800 text-xs text-slate-500">
+        <div class="max-w-3xl mx-auto px-4 space-y-4">
+            <p class="text-center">© 2026 En Movimiento. Todos los derechos reservados.</p>
+
+            <details class="bg-slate-800/40 border border-slate-700/60 rounded-xl p-4">
+                <summary class="font-semibold text-slate-300">Términos y condiciones</summary>
+                <div class="mt-3 space-y-2 text-slate-400 leading-relaxed">
+                    <p><strong class="text-slate-300">1. Aceptación.</strong> Al realizar una compra en este sitio aceptás estos Términos y Condiciones. Te recomendamos leerlos antes de completar tu pedido.</p>
+                    <p><strong class="text-slate-300">2. Producto y entrega.</strong> Adquirís un producto digital de acceso inmediato. Una vez confirmado el pago recibirás las instrucciones de acceso por correo electrónico. No se envían productos físicos.</p>
+                    <p><strong class="text-slate-300">3. Precio y pago.</strong> El precio publicado en el checkout corresponde a un pago único, sin cargos recurrentes ni suscripciones. Los pagos se procesan mediante plataformas seguras de terceros (Hotmart); este sitio no almacena los datos de tu tarjeta.</p>
+                    <p><strong class="text-slate-300">4. Garantía y reembolsos.</strong> Ofrecemos una garantía de 7 días. Dentro de ese plazo podés solicitar la devolución del importe abonado por los canales de contacto. Pasado ese período no se realizan reembolsos, al tratarse de un producto digital de acceso inmediato.</p>
+                    <p><strong class="text-slate-300">5. Propiedad intelectual.</strong> Todo el contenido es de uso personal e intransferible. Queda prohibida su reventa, copia, redistribución o difusión total o parcial sin autorización.</p>
+                    <p><strong class="text-slate-300">6. Resultados.</strong> Los contenidos tienen fines informativos y educativos. Los resultados pueden variar según cada persona y no constituyen una garantía de rendimiento específico.</p>
+                </div>
+            </details>
+
+            <details class="bg-slate-800/40 border border-slate-700/60 rounded-xl p-4">
+                <summary class="font-semibold text-slate-300">Política de privacidad</summary>
+                <div class="mt-3 space-y-2 text-slate-400 leading-relaxed">
+                    <p><strong class="text-slate-300">1. Datos que recopilamos.</strong> Recopilamos los datos que nos brindás al comprar: nombre, correo electrónico y teléfono.</p>
+                    <p><strong class="text-slate-300">2. Uso de los datos.</strong> Usamos tus datos únicamente para procesar la compra, entregarte el producto y brindarte soporte.</p>
+                    <p><strong class="text-slate-300">3. Terceros.</strong> No vendemos ni compartimos tus datos con fines publicitarios. Solo se comparten con los proveedores de pago necesarios para procesar la transacción.</p>
+                    <p><strong class="text-slate-300">4. Seguridad.</strong> Los pagos se procesan en plataformas seguras. No almacenamos los datos de tu tarjeta.</p>
+                    <p><strong class="text-slate-300">5. Tus derechos.</strong> Podés solicitar el acceso, la corrección o la eliminación de tus datos escribiéndonos por los canales de contacto.</p>
+                </div>
+            </details>
+        </div>
     </footer>
+
+    <!-- BARRA CTA FIJA (solo móvil) -->
+    <div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur border-t border-slate-700 px-4 py-3" style="padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));">
+        <a href="https://pay.hotmart.com/M108002293R?checkoutMode=10" class="block w-full bg-teal-600 hover:bg-teal-500 text-white font-extrabold py-3 px-4 rounded-xl text-center">
+            Quiero empezar hoy →
+        </a>
+    </div>
 
 </body>
 </html>
