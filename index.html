@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>En Movimiento - Guía práctica de ejercicios en silla de ruedas</title>
     <meta name="description" content="Guía visual y práctica con rutinas y ejercicios adaptados en silla de ruedas: seguridad, fuerza, movilidad, core y resistencia para empezar hoy.">
-    <!-- Tailwind CSS CDN para un diseño moderno y responsivo -->
-	<link rel="icon" href="favicon.ico" sizes="any">
-	<link rel="icon" type="image/svg+xml" href="favicon.svg">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Preconexión de Fuentes para Reducir TBT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN (Para Producción se recomienda compilar a un archivo CSS estático) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
         body { font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; }
@@ -25,18 +32,16 @@
         }
     </style>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3N0V20MHZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Z3N0V20MHZ');
+    </script>
+        
     <!-- Meta Pixel -->
-	
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3N0V20MHZ"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-Z3N0V20MHZ');
-	</script>
-		
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -73,9 +78,9 @@
             <!-- CONTENEDOR PORTADA + CTA -->
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center max-w-4xl mx-auto bg-slate-800/60 border border-slate-700/80 rounded-3xl p-6 sm:p-8 backdrop-blur shadow-2xl">
 
-                <!-- Mockup del ebook -->
+                <!-- Mockup del ebook (Optimizado con fetchpriority) -->
                 <div class="md:col-span-6 flex justify-center">
-                    <img src="Mockup-ebook.jpg" alt="Mockup del ebook En Movimiento: Guía práctica de ejercicios en silla de ruedas" width="1024" height="1024" class="rounded-2xl shadow-2xl border border-slate-700/50 w-full max-w-[420px] h-auto object-cover">
+                    <img src="Mockup-ebook.webp" alt="Mockup del ebook En Movimiento: Guía práctica de ejercicios en silla de ruedas" width="420" height="420" fetchpriority="high" class="rounded-2xl shadow-2xl border border-slate-700/50 w-full max-w-[420px] h-auto object-cover">
                 </div>
 
                 <!-- Detalle / CTA -->
@@ -125,7 +130,7 @@
 
                 <!-- Bono 1 -->
                 <article class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col">
-                    <img src="Mockup-resumen.jpg" alt="Mockup del Bono #1: Tabla resumen de ejercicios" width="1024" height="1024" loading="lazy" class="w-full h-auto">
+                    <img src="Mockup-resumen.webp" alt="Mockup del Bono #1: Tabla resumen de ejercicios" width="500" height="500" loading="lazy" class="w-full h-auto">
                     <div class="p-6 space-y-3">
                         <div class="flex items-center justify-between gap-3">
                             <span class="text-teal-400 font-bold text-sm">Bono #1</span>
@@ -140,7 +145,7 @@
 
                 <!-- Bono 2 -->
                 <article class="bg-slate-800/50 border border-slate-700/50 rounded-3xl overflow-hidden flex flex-col">
-                    <img src="Mockup-checklist.jpg" alt="Mockup del Bono #2: Checklist antes de cada sesión" width="1024" height="1024" loading="lazy" class="w-full h-auto">
+                    <img src="Mockup-checklist.webp" alt="Mockup del Bono #2: Checklist antes de cada sesión" width="500" height="500" loading="lazy" class="w-full h-auto">
                     <div class="p-6 space-y-3">
                         <div class="flex items-center justify-between gap-3">
                             <span class="text-teal-400 font-bold text-sm">Bono #2</span>
@@ -404,7 +409,6 @@
             Quiero empezar hoy →
         </a>
     </div>
-
 
     <script>
         // Evento InitiateCheckout en todos los botones de compra
